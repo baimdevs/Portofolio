@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaimStore - Portofolio & Investasi</title>
+    <style>
+        /* Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Navbar */
+        header {
+            border-bottom: 1px solid #1e293b;
+            padding: 20px 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+
+        /* Hero / Profile Section */
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 60px 0;
+            border-bottom: 1px solid #1e293b;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%; /* Membuat foto jadi bulat, atau hapus baris ini jika ingin kotak 1:1 murni */
+            object-fit: cover;
+            border: 4px solid #38bdf8;
+            margin-bottom: 20px;
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            color: #94a3b8;
+            font-size: 18px;
+            max-width: 600px;
+        }
+
+        /* Skills / Capabilities Section */
+        .skills-section {
+            padding: 60px 0;
+        }
+
+        .skills-section h2 {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 40px;
+            color: #38bdf8;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-card {
+            background-color: #1e293b;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #334155;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            border-color: #38bdf8;
+        }
+
+        .skill-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+
+        .skill-card h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .skill-card p {
+            color: #94a3b8;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: #64748b;
+            border-top: 1px solid #1e293b;
+            font-size: 14px;
+        }
+
+        /* Responsif untuk HP */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 28px; }
+            .hero p { font-size: 16px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="navbar">
+                <div class="logo">baimstore.my.id</div>
+            </div>
+        </header>
+
+        <!-- Profile Section -->
+        <section class="hero">
+            <!-- Ganti 'profile.jpg' dengan path foto 1:1 milikmu nanti -->
+            <img src="https://via.placeholder.com/400" alt="Foto Baim" class="baim.jpg">
+            <h1>Halo, Saya Baim</h1>
+            <p>Seorang praktisi dan enthusiast di dunia finansial modern. Berfokus pada analisis pasar, pengelolaan aset, dan strategi perdagangan digital.</p>
+        </section>
+
+        <!-- Capabilities Section -->
+        <section class="skills-section">
+            <h2>Keahlian & Kemampuan</h2>
+            <div class="skills-grid">
+                
+                <!-- Kartu Investasi -->
+                <div class="skill-card">
+                    <span class="skill-icon">💼</span>
+                    <h3>Investasi umum</h3>
+                    <p>Pengelolaan portofolio jangka panjang dan alokasi aset yang terukur untuk pertumbuhan finansial yang stabil.</p>
+                </div>
+
+                <!-- Kartu Saham -->
+                <div class="skill-card">
+                    <span class="skill-icon">📈</span>
+                    <h3>Pasar Saham</h3>
+                    <p>Analisis tren pasar, membaca momentum, dan memilih emiten potensial untuk investasi maupun trading.</p>
+                </div>
+
+                <!-- Kartu Binary -->
+                <div class="skill-card">
+                    <span class="skill-icon">📊</span>
+                    <h3>Binary Options</h3>
+                    <p>Analisis pergerakan harga cepat dengan manajemen risiko yang ketat dan psikologi trading yang disiplin.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 baimstore.my.id. All rights reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
